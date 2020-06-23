@@ -236,9 +236,8 @@ class Magnet {
     
     // redraw
     noStroke();
-  
-    push(); // north side
-    fill(192, 57, 43);
+    push(); // south side
+    fill(41, 128, 185);
     translate(0, this._y, this._z);
     onScreen ? rotateY(0) : rotateY(-yRot);
     rotateZ(this._angle);
@@ -248,8 +247,8 @@ class Magnet {
 
     rotateY(0);
 
-    push(); // south side
-    fill(41, 128, 185);
+    push(); // north side
+    fill(192, 57, 43);
     translate(0, this._y, this._z);
     onScreen ? rotateY(0) : rotateY(-yRot);
     rotateZ(this._angle);
